@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* sætter størrelsen af boksene, ja størrelsen af boksene, dvs. ingen margener osv. så to bokse kan støde helt op til hinanden. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+  padding: 10px; /* margen omkring tekst */
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+/* sætter h1 i header klassen til fontsize 50px*/
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden; /* tekst bliver ikke vist hvis det går ud over kanten*/
+  background-color: #004080;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: inline-block; /* linkene fylder hele linjen*/
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /* fjerner understregen på link*/
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns*/
+/* danner en klasse til begge kolonner */
+.row:after {
+  content: "";
+  display: block;
+  clear: both; /* rydder efter begge */
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><img src="Ryslogo.jpg" width="570" height="200" ></img></h1>
+</div>
+
+<div class="topnav">
+  <a href="Somama2.0.html">Hjem</a>
+  <a href="Studieretninger.html">Studieretninger</a>
+  <a href="GCP.html">GCP</a>
+  <a href="QandA.html">Q&A</a>
+  <a href="Vejledning.html">Vejledning</a>
+  <a href="kontaktos.html" style="float:right">Kontakt os</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2  style="color:MidnightBlue;">GCP - Hvad er det?</h2>
+      <h1><img src="WorldMap.png" width="570" height="300" ></img></h1>
+      <p>Formålsbeskrivelse</p>
+      <p>Global Citizenship programmet har to overordnede formål. For det første skal det skabe forudsætningerne hos Rysensteens elever for at kunne uddanne sig i udlandet og sidenhed arbejde i internationalt orienterede virksomheder, institutioner eller NGOer. For det andet skal det gøre Rysensteens elever til verdensborgere, der har evnerne og modet til at reflektere over både egne og andres værdier i mødet med fremmede kulturers mangfoldighed. Og som med en stærk forankring i egne, demokratiske værdier, respekterer forskelle i tradition, sprog, religion, vaner og livsform, og er indstillet på – forskellene til trods - at forstå og tage ansvar for løsningerne på globale problemstillinger</p>
+    </div>
+    <div class="card">
+      <h2   style="color:MidnightBlue;">FNs 17 verdensmål</h2>
+      <h5></h5>
+      <img src="fn2.jpg" width="570" height="300" ></img>
+      <p>På Rysensteen Gymnasium mener vi, at den globale borgers centrale evner er viden og evnen til at reflektere på en nuanceret måde over "den anden" og ikke mindst sig selv, når man engagerer sig i møder med udenlandske kulturer.
+
+Men disse evner kan ikke stå alene. Vi tror på, at et globalt borgerskab kun bliver udfoldet, når de bruges til konkret handling. Derfor er FNs 17 udviklingsmål integreret i Rysensteen Gymnasiums Global Citizenship Programme. Det betyder, at alle fag er forpligtet til at inddrage målene i deres læreplaner, og at mange ekstra-curriculære aktiviteter fokuserer på at fremme et eller flere af målene for bæredygtig udvikling.
+
+Det er vores håb, at vi kan yde et beskedent bidrag til at fremme FNs mål for bæredygtig udvikling gennem Global Citizenship Programmet. </p>
+
+</div>
+<div class="card">
+  <h2   style="color:MidnightBlue;">Rysensteenere i verden</h2>
+  <h5></h5>
+  <img src="Rysiverden.png" width="570" height="300" ></img>
+  <p>Ud i verden på egen hånd: Rysensteen Gymnasium sender hvert år op mod fem 3g-elever ud i verden som en del af deres gymnasieforløb - bl.a. med økonomisk støtte fra skolens Jubilæumsfond. </p>
+
+
+  </div>
+  <div class="card">
+    <h2   style="color:MidnightBlue;">Læreplan og progressionsplan</h2>
+    <h5>Baggrund for Global Citizenship Programme på Rysensteen Gymnasium</h5>
+    <img src="Læreplan.png" width="570" height="300" ></img>
+    <p>På Rysensteen Gymnasium har det grundlæggende værdisæt siden 1990'erne været rundet af en demokratisk omgangsform både i undervisningen og i skolekulturen generelt. Eleverne har altid haft medindflydelse i mange beslutninger, har deltaget aktivt i evalueringsopbygninger og har ofte påtaget sig et stort ansvar ved planlægning af tiltag på skolen eller ved tilrettelæggelse af arrangementer.
+
+Dette blev i 2011 udbygget med en stor international satsning kaldet Global Citizenship Programme, der udover partnerskoler over hele verden til alle spor også har resulteret i en læreplan, der nøje beskriver, hvordan vi arbejder med programmet  i den daglige undervisning. I 2015 blev Rysensteen Gymnasium godkendt som international profilskole for dette arbejde.  </p>
+
+
+
+
+</body>
+</html>

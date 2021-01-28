@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* sætter størrelsen af boksene, ja størrelsen af boksene, dvs. ingen margener osv. så to bokse kan støde helt op til hinanden. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+  padding: 10px; /* margen omkring tekst */
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+/* sætter h1 i header klassen til fontsize 50px*/
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden; /* tekst bliver ikke vist hvis det går ud over kanten*/
+  background-color: #004080;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: inline-block; /* linkene fylder hele linjen*/
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /* fjerner understregen på link*/
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns*/
+/* danner en klasse til begge kolonner */
+.row:after {
+  content: "";
+  display: block;
+  clear: both; /* rydder efter begge */
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><img src="Ryslogo.jpg" width="570" height="200" ></img></h1>
+</div>
+
+<div class="topnav">
+  <a href="Somama2.0.html">Hjem</a>
+  <a href="Studieretninger.html">Studieretninger</a>
+  <a href="GCP.html">GCP</a>
+  <a href="QandA.html">Q&A</a>
+  <a href="Vejledning.html">Vejledning</a>
+  <a href="kontaktos.html" style="float:right">Kontakt os</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1 style="color:Maroon;">Studieretninger på Rysensteen</h1>
+    </div>
+    <div class="card">
+      <h2  style="color:Maroon;">Musik på Rysensteen:</h2>
+      <h1><img src="music.jpg" width="460" height="200" ></img></h1>
+      <p>På Rysensteen Gymnasium er musikholdene med til at skabe en kreativ, levende og mangfoldig skolekultur. Som musikelev vil du blive del af et stærkt fællesskab både på og uden for skolen, og du kan engagere dig på en lang række forskellige måder og niveauer. Mange aktiviteter styres af eleverne selv - f. eks. den store årlige musical og de populære Spil Op-aftener, hvor elever på tværs af klasser og årgange optræder for hinanden i en afslappet og hyggelig atmosfære med plads til dem der har optrådt mange gange før, og dem der prøver for første gang. I forbindelse med undervisningen kan du opleve koncerter på skolen, workshop og besøg af professionelle artister, samt koncertture til koncertsale og spillesteder i hele København. Derudover har vi en række frivillige musikaktiviteter, som du kan blive en del af, som f.eks. morgensang, instrumentworkshops, kor og sammenspil. Det er kun fantasien der sætter grænser.</p>
+    </div>
+
+    <div class="card">
+      <h2 style="color:Maroon;">Samfundsfag på Rysensteen:</h2>
+      <h1><img src="fn2.jpg" width="490" height="200" ></img></h1>
+
+      <h5>Rysensteen udbyder flere forskellige studieretninger, hvor samfundsfag A er det bærende fag. Læs mere om de forskellige valgmuligheder herunder.</h5>
+
+      <h5  style="color:Maroon;">Samfundsfag og engelsk</h5>
+      <p>   I denne studieretning med samfundsfag A i kombination med engelsk A, får du rig mulighed for at analysere de politiske, økonomiske og kulturelle forhold både i Danmark, Europa og den øvrige del af verden. Du får herved en bred forståelse for de sammenhænge og muligheder, der er skabt med de seneste års globalisering. Gennem den løbende kontakt med partnerskolen øver du dig i at kommunikere og begå dig internationalt. Her får du god støtte fra verdenssproget engelsk, som du har på denne studieretning. Er du interesseret i at blive klogere på den moderne verdens mange spændende udfordringer, vil du trives på denne studieretning.</p>
+      <h5  style="color:Maroon;">Samfundsfag og matematik</h5>
+      <p>I denne studieretning med samfundsfag A i kombination med matematik A, bliver du klædt på til at forstå de udfordringer og muligheder, som en globaliseret verden giver gennem arbejde med både politiske, økonomiske og kulturelle forhold i Danmark og andre lande. Med denne fagkombination vil du blive godt rustet til at tage kritisk stilling til aktuelle emner som meningsmålingers pålidelighed og betydning i forbindelse med fx Trumps valg i USA og det britiske nej til EU. Sammen kan fagene gøre os klogere på de økonomiske sammenhænge og forstå virkningerne af politiske og økonomiske indgreb som for eksempel skattelettelser. Arbejdet med globale problemstillinger, som fx ulighed, er et omdrejningspunkt på studieretningen, hvor vi med matematik kan opgøre ulighedens omfang og med samfundsfag belyse både de økonomiske og sociale konsekvenser.</p>
+    </div>
+    <div class="card">
+    <h2  style="color:Maroon;">Science på Rysensteen:</h2>
+    <h5>Rysensteen Gymnasium udbyder i alt tre forskellige varianter af science-studieretninger. Har du interesser for problemstillinger og løsninger på fysisk, kemi eller biologiske udfordringer, kan du læse mere om de tre valgmuligheder på undersiderne. De tre science-studieretninger udgør tilsammen en meget bred vifte af områder indenfor naturvidenskab. I det daglige arbejde med eksperimenter i skolens laboratorier i staldene vil du blive udfordret på kreativitet og selvstændighed. Så hvis du er interesseret i at blive klogere på hvordan fysisk, kemi, biologi og matematik kan hjælpe med at løse nogle af verdens udfordringer (f.eks. om fusionsenergi kan løse klimakrisen, om gensplejsning kan løse fødevarekrisen, etc.) kan du læse mere om de tre valgmuligheder herunder.</h5>
+    <h1><img src="science.jpg" width="490" height="200" ></img></h1>
+    <h5  style="color:Maroon;">Almen Science</h5>
+    <p>Denne studieretning er for dig, som har interesse for samspillet mellem matematik og science og samtidig er nysgerrig efter at finde ud af, hvordan verden omkring dig i det hele taget er opbygget. Studieretningen giver dig et fascinerende indblik i både matematikkens verden og det naturvidenskabelige verdensbillede, og gør det samtidig muligt for dig at udnytte det matematiske håndværk på mange forskellige måder i de øvrige naturvidenskabelige fag. Du kommer blandt andet til at arbejde med tankevækkende science-eksperimenter, modellering af data fra hverdagen og programmering. Hvad er primtal, og hvad har de med bitcoins og datasikkerhed at gøre? Er det virkelig kræftfremkaldende at ryge? Hvorfor har tigeren striber og leoparden pletter? Kan man lave pålidelige klimamodeller, der er til at stole på? Er der muligt at regne på antal syge i en influenzaepidemi? Hvor stor kan jordens befolkning blive og er der grænser for vækst? Hvordan bygger man egentlig en metro, og på hvilken måde kan den finansieres? Er mobiltelefoner farlige - og hvilket abonnement er billigst? Hvad er sammenhængen mellem solsikke, ananas og det gyldne snit? Hvor mange træk tager det maksimalt at løse Rubiks Cube? Alt det og meget mere kan besvares vha. matematikken og de naturvidenskabelige fag i denne studieretning.</p>
+    <h5  style="color:Maroon;">Science og Bioteknologi</h5>
+    <p>Studieretningen har fokus på genteknologi og arvelighed – miljø og ressourcer – statistisk modellering. Du vil lære at beskrive og forstå, hvordan bioteknologi anvendes i industrien i et videnssamfund. Du kommer til at arbejde bredt med emner fra biologi, kemi, fysik og matematik. I det daglige arbejde med eksperimenter i skolens moderne laboratorier vil du blive udfordret på kreativitet og selvstændighed. Aktuelle emner af bl.a. etisk karakter vil indgå i undervisningen, fx brug af stamceller til behandling af diabetes, fremstilling og udnyttelse af energi, fx i form af bioethanol fra halm og genteknologi. Gennem arbejdet med emnerne vil du få indsigt i, hvordan sciencefagene udnyttes i et moderne samfund, og hvilken betydning de har for globaliseringen.</p>
+    <h5  style="color:Maroon;">Sience og Innovation</h5>
+    <p> Studieretningen er for dig som har interesse i grundlaget for udviklingen af vores forståelse af Universets historie. Her er der plads til at fordybe sig i naturlovene og forundres over både dagligdags- og ekstraordinære fænomener. Centralt i undervisningen står det innovative i det eksperimentelle arbejde i sciencefagene. Her vil du blive udfordret til kreativt at udforske naturens love og anvende dem i flere programmeringsforløb. Med vores eksperimentelle udstyr vil der blive åbnet for nye måder at lære naturvidenskab på. Du vil komme til at arbejde med moderne IT tilgange, både når du tilegner dig viden inden for de centrale fag matematik, fysik og kemi, og når du selv udforsker naturen ud fra dine egne udtænkte eksperimenter. Du vil få en ny forståelse for din omverden og for den indflydelse naturvidenskaben har på dig og samfundet. Med Fysik A i studieretningen kommer du tidligt yil at arbejde med komplekse problemstillinger hvor matematiske redskaber er centrale og du vil oparbejde kompetencer til at løse opgaver på videregående naturvidenskabelige uddannelser.</p>
+
+
+</body>
+</html>

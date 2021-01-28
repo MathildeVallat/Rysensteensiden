@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* sætter størrelsen af boksene, ja størrelsen af boksene, dvs. ingen margener osv. så to bokse kan støde helt op til hinanden. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+  padding: 10px; /* margen omkring tekst */
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+/* sætter h1 i header klassen til fontsize 50px*/
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden; /* tekst bliver ikke vist hvis det går ud over kanten*/
+  background-color: #004080;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: inline-block; /* linkene fylder hele linjen*/
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /* fjerner understregen på link*/
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns*/
+/* danner en klasse til begge kolonner */
+.row:after {
+  content: "";
+  display: block;
+  clear: both; /* rydder efter begge */
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><img src="Ryslogo.jpg" width="570" height="200" ></img></h1>
+</div>
+
+<div class="topnav">
+  <a href="Somama2.0.html">Hjem</a>
+  <a href="Studieretninger.html">Studieretninger</a>
+  <a href="GCP.html">GCP</a>
+  <a href="QandA.html">Q&A</a>
+  <a href="Vejledning.html">Vejledning</a>
+  <a href="kontaktos.html" style="float:right">Kontakt os</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1 style="color:Maroon;">Vejledning</h1>
+    </div>
+    <div class="card">
+      <h2 style="color:Maroon;">Er du klar til gymnasiet?</h2>
+      <p>Find informationer om hvilken gymnasial uddanelse der passer bedst til dig hos UddannelsesGuiden. Følg linket: </p>
+      <p><a href="https://www.ug.dk/uddannelser/gymnasialeuddannelser">Besøg UddannelsesGuidens hjemmeside</a></p>
+      <h1><img src="uddannelsesGuiden.jpg" width=100% ></img></h1>
+    </div>
+
+    <div class="card">
+      <h2 style="color:Maroon;">Studievalg:</h2>
+      <h5>Studievalg Danmark hjælper dig med dit valg af videregående uddannelse, herunder videregående efter- og videreuddannelse.Fokus i vejledningen er både på at få overblik over dine muligheder og på dit valg af videregående uddannelse og de efterfølgende beskæftigelsesmuligheder. Studievalg vejleder om videregående uddannelse på skoler med ungdomsuddannelse.</h5>
+      <p>Få inspiration til din vidergående uddannelse, ved brug af værktøjer til rådighed hos UddannelsesGuiden. Følg linket: </p>
+      <p><a href="https://www.ug.dk/inspiration/vejledningsvaerktoejer-0">Benyt værktøjer hos UddannelsesGuiden</a></p>
+      <h1><img src="værktøjer.jpg" width=100% ></img></h1>
+    </div>
+
+    <div class="card">
+    <h2 style="color:Maroon;">Trivsel og sundhed:</h2>
+    <p>På Rysensteen Gymnasium er elevernes sundhed og trivsel i fokus, og vi har forskellige tiltag til at fremme den fysiske og psykiske sundhed. For at sikre elevtrivslen arbejdes der med at skabe en tryg og rummelig klassekultur og gode sociale fællesskaber i såvel klassen samt på tværs af klasser. Skolens mange elevudvalg skaber rammerne for, at eleverne kan mødes på tværs og derudover afholder skolen løbende diverse fællesarrangementer. Den fysiske sundhed søger vi at fremme gennem at arbejde systematisk med at skabe sunde alkohol, rusmiddel- og rygevaner. Derudover forsøger vi at fremme en aktiv hverdag for eleverne, idet de har adgang til DGI-byens faciliteter før og efter skole og vi tilbyder frivillig idræt om fredagen.</p>
+    </div>
+
+
+</body>
+</html>
